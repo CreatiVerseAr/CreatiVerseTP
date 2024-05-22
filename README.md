@@ -5,5 +5,5 @@ Sitio web creado como trabajo final de equipo.
 * Responsive
 * Animacion
 * Fexbox
-* Cambiar letra pareja
-* Validacion con error.
+
+
