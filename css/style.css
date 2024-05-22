@@ -43,6 +43,11 @@ form {
     background-size: cover;
     background-attachment: fixed;
 }
+.gif-container {
+  display: flex;
+  justify-content: center;
+}
+
 body.nosotros {
     background-image: url('../img/colorful-abstract-pastel-watercolor-background.jpg'); 
     background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
