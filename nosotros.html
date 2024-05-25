@@ -1,77 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Nosotros</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>CreatiVerse</title>
-    <link rel="icon" href="img/favicon.png" type="image">
+     <link rel="icon" href="img/favicon.png" type="image">
 </head>
-<body class="pagina nosotros">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<body class="nosotros">
+    <nav id="top" class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="index.html" style="color: rgb(9, 141, 75);">Inicio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="nosotros.html" style="color: rgb(88, 110, 231);">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cursos.html" style="color: rgb(218, 145, 10);">Cursos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html" style="color: rgb(214, 7, 128);">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html"
+                            style="color: rgb(88, 110, 231);">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cursos.html"
+                            style="color: rgb(218, 145, 10);">Cursos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registro.html"
+                            style="color: rgb(214, 7, 128);">Registrate</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    <div class="container mt-4">
-        <h1 id="nosotros" class="text-primary">Nosotros</h1>
-        <hr>
-        <div class="row">
-            <div class="col-md-3">
-                <a href="#subtituloPrimario">Intereses alineados</a> <br>
-                <a href="#subtitulo1">Método educativo</a> <br>
-                <a href="#subtitulo2">Elige tu camino en tecnología</a> <br>
-                <a href="#subtitulo3">Conviértete en Full Stack Developer</a> <br>
-                <a href="#videos">Mis videos</a>
-            </div>
-            <div class="col-md-9">
-                <h2 id="subtituloPrimario" class="text-danger">Intereses alineados</h2>
-                <p class="lead">Confiamos en ti. Confiamos en nuestros programas. Por eso, si no encuentras empleo en los 12 meses posteriores a tu graduación, no asumes ningún costo. Conoce nuestras opciones:</p>
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>Pagas mientras estudias con Garantía de Empleo</p>
-                        <p>Si buscas empleo activamente y no lo consigues, te devolvemos el dinero.</p>
-                        <img src="img/image.webp" width="260" height="115" alt="Aprobado" class="img-fluid">
-                    </div>
-                    <div class="col-md-6">
-                        <p>Paga cuando consigues un empleo</p>
-                        <p>Estudia con $0 costo inicial y paga solo cuando consigues un empleo.</p>
-                        <img src="img/image (1).webp" width="260" height="115" alt="Chanchi" class="img-fluid">
-                    </div>
-                </div>
-                <h2 id="subtitulo1" class="text-danger mt-4">Método educativo</h2>
-                <p class="lead">Online, flexible y rápido. Pondrás en práctica todos los conocimientos aprendidos y crearás tu portfolio de proyectos.</p>
-                
-                <h2 id="subtitulo2" class="text-danger mt-4">Elige tu camino en tecnología</h2>
-                <p class="lead">En CreatiVerse diseñamos productos con foco en empleabilidad que se adaptan a tus necesidades. Tenemos cursos introductorios para quienes quieren iniciar su camino en tecnología, carreras para quienes están convencidos de querer lograr ese primer trabajo en esta industria y cursos de upskilling para quienes buscan ampliar sus conocimientos y dar el siguiente paso.</p>
-                
-                <h2 id="subtitulo3" class="text-danger mt-4">Conviértete en Full Stack Developer</h2>
-                <p class="lead">Un programa de estudios intensivo y online que te conectará con el mundo laboral. En pocos meses sé parte de un mundo lleno de oportunidades.</p>
-                
-                <h2 id="videos" class="text-danger mt-4">Mis videos</h2>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/FbNw5-mkg6E?si=HQF77GgH16w4eg-l" allowfullscreen></iframe>
-                </div>
-                <a class="text-danger mt-4" href="#nosotros">Ir arriba</a>
-            </div>
-        </div>
+    <main class="container3">
+        <h1 class="text-center mb-5">Nosotros</h1>
+        <section id="historia" class="my-5">
+            <h2 class="section-title">Nuestra Historia</h2>
+            <p class="section-text"> CreatiVerse comenzó su viaje en 2010 cuando un grupo de apasionados por la programación y la
+                enseñanza se unieron con un objetivo en mente: hacer que el aprendizaje de la programación sea accesible y
+                emocionante para todos. Desde un pequeño garage, estos entusiastas trabajaron día y noche para crear los primeros
+                cursos que combinarían teoría y práctica de manera efectiva.</p>
+            <p class="section-text"> En los primeros años, CreatiVerse enfrentó numerosos desafíos, desde la competencia con grandes
+                plataformas hasta la necesidad de crear contenido actualizado y relevante en un campo en constante evolución. Sin
+                embargo, gracias al compromiso y la dedicación del equipo, la plataforma comenzó a ganar reconocimiento y a atraer a
+                estudiantes de todo el mundo.</p>
+            <p class="section-text"> Hoy en día, CreatiVerse es una comunidad global con más de 100,000 estudiantes y una amplia gama
+                de cursos que abarcan desde programación básica hasta desarrollo avanzado de software. Nuestra evolución es
+                testimonio de nuestra pasión por la educación y nuestro compromiso con la excelencia.</p>
+            </section>
+            <section id="developers" class="my-5">
+            <h2 class="section-title">Nuestros Desarrolladores</h2>
+            <ul class="developers-list">
+                <li><img src="img/perfil-mini.jpg" alt="Arjona Carlos Adrián" class="developer-img"><span class="developer-name">Adrián Arjona - Frontend</span></li>
+                <li><img src="img/contact.jpg" alt="Desarrolladora 2" class="developer-img"><span class="developer-name">Cintia Mouzo - Backend</span></li>
+                <li><img src="img/NIco.jpeg" alt="Desarrollador 3" class="developer-img"><span class="developer-name">Nicolas Palazzo - Diseñador UX/UI</span></li>
+            </ul>
+        </section>
+        <section id="valores" class="my-5">
+            <h2 class="section-title">Valores y Filosofía</h2>
+            <p class="section-text">En CreatiVerse, nuestra misión es brindar la mejor experiencia educativa en programación. Nos
+                destacamos por:</p>
+            <ul class="values-list">
+                <li><strong>Calidad:</strong> Nos aseguramos de que todos nuestros cursos sean de la más alta calidad, creados por
+                    expertos en la industria y actualizados constantemente para reflejar las últimas tendencias y tecnologías.</li>
+                <li><strong>Innovación:</strong> Nos esforzamos por innovar en nuestras metodologías de enseñanza y herramientas
+                    educativas para proporcionar una experiencia de aprendizaje única y efectiva.</li>
+                <li><strong>Apoyo Constante:</strong> Brindamos soporte continuo a nuestros estudiantes a través de tutores en
+                    línea, foros de discusión y una comunidad activa de alumnos.</li>
+                <li><strong>Compromiso con el Éxito:</strong> Nos comprometemos con el éxito de nuestros estudiantes, ofreciendo
+                    recursos adicionales, proyectos prácticos y oportunidades de networking para asegurar su crecimiento
+                    profesional.</li>
+            </ul>
+        </section>
+        <section id="credibilidad" class="my-5">
+            <h2 class="section-title">Credibilidad y Confianza</h2>
+            <p class="section-text">¡Déjanos ser tu guía en el mundo de la programación! En CreatiVerse, entendemos que confiar en un sitio nuevo puede ser difícil, pero estamos aquí para demostrarte que vale la pena.</p>
+<p class="section-text">Nuestra plataforma está diseñada para ofrecerte la mejor experiencia de aprendizaje, con contenido de alta calidad y un equipo de soporte siempre disponible para ayudarte. Además, nuestras estadísticas hablan por sí solas:</p>
+<ul class="trust-list">
+<li>Más de 100,000 estudiantes satisfechos.</li>
+<li>Tasa de finalización de cursos del 95%.</li>
+<li>Certificaciones reconocidas por las principales empresas tecnológicas.</li>
+</ul>
+<p class="section-text">Sabemos que invertir en educación es un gran paso, pero recuerda: <strong>"El que no arriesga, no gana".</strong> Únete a nuestra comunidad y descubre el potencial que hay en ti. ¡Te esperamos con los brazos abiertos!</p>
+        </section>
+    
+    </main>
+    <div class="container mt-5">
+        <a class="destacado d-block text-center" href="#top">Ir arriba</a>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <footer class="footer-distributed">
+
+        <footer class="footer-distributed">
+
+            <div class="footer-left">
+      
+              <h3>Creati<span>Verse</span></h3>
+      
+              <p class="footer-links">
+                <a href="#" class="link-1">Inicio</a>
+                
+                <a href="nosotros.html">Nosotros</a>
+              
+                <a href="cursos.html">Cursos</a>
+              
+                <a href="registro.html">Registrate</a>
+              </p>
+      
+              <p class="footer-company-name">CodoACodo © 2024 Todos los derechos reservados</p>
+              <p><a href="Aviso_derecho_autor.txt">Aviso de derecho de autor |
+                <a href="politicas_privacidad.txt">Política de Privacidad</a></p>
+            
+            </div>
+
+            <div class="footer-center">
+      
+                <div>
+                    <a href="https://www.google.com/maps/place/Piedras+519+PB,+C1070AAJ+CABA/data=!4m2!3m1!1s0x95bcca3a5947f04b:0x40eb60763cf187cd?sa=X&ved=2ahUKEwjyndHdpJ_zAhXKzJUCHcWLAksQ8gF6BAh9EAE">
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>Piedras 519 PB</span>Capital Federal, Argentina</p>
+                    </a>
+                </div>
+      
+                <div>
+                    <a href="https://wa.me/5491136409750"> 
+                        <i class="fab fa-whatsapp"></i> 
+                        <p>+541136409750</p> 
+                    </a>
+                </div>
+      
+              <div>
+                <a href="mailto:creativerse.ar@gmail.com">
+                    <i class="fa fa-envelope"></i>
+                    <p>creativerse.ar@gmail.com</p>
+                </a>
+            </div>
+      
+            </div>
+      
+            <div class="footer-right">
+      
+              <div class="footer-icons">
+                <a href="https://www.instagram.com/creativerse.ar?igsh=bWlqeHduOTF2OXJo"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/CreatiVerseAr"><i class="fab fa-github"></i></a>
+            </div>
+      
+            </div>
+      
+          </footer>
 </body>
+
 </html>
