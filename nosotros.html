@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Nosotros</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
      <link rel="icon" href="img/favicon.png" type="image">
 </head>
 
@@ -31,7 +32,7 @@
         </div>
     </nav>
     <main class="container3">
-        <h1 class="text-center mb-5">Nosotros</h1>
+        <h1 id=a class="text-center mb-5 ">Nosotros</h1>
         <section id="historia" class="my-5">
             <h2 class="section-title">Nuestra Historia</h2>
             <p class="section-text"> CreatiVerse comenzó su viaje en 2010 cuando un grupo de apasionados por la programación y la
@@ -50,7 +51,7 @@
             <h2 class="section-title">Nuestros Desarrolladores</h2>
             <ul class="developers-list">
                 <li><img src="img/perfil-mini.jpg" alt="Arjona Carlos Adrián" class="developer-img"><span class="developer-name">Adrián Arjona - Frontend</span></li>
-                <li><img src="img/contact.jpg" alt="Desarrolladora 2" class="developer-img"><span class="developer-name">Cintia Mouzo - Backend</span></li>
+                <li><img src="img/contact.jpg" alt="Desarrolladora 2" class="developer-img"><span class="developer-name">Cynthia Mouzo - Backend</span></li> 
                 <li><img src="img/NIco.jpeg" alt="Desarrollador 3" class="developer-img"><span class="developer-name">Nicolas Palazzo - Diseñador UX/UI</span></li>
             </ul>
         </section>
@@ -98,7 +99,7 @@
               <h3>Creati<span>Verse</span></h3>
       
               <p class="footer-links">
-                <a href="#" class="link-1">Inicio</a>
+                <a href="index.html" class="link-1">Inicio</a>
                 
                 <a href="nosotros.html">Nosotros</a>
               
@@ -144,10 +145,19 @@
                 <a href="https://www.instagram.com/creativerse.ar?igsh=bWlqeHduOTF2OXJo"><i class="fab fa-instagram"></i></a>
                 <a href="https://github.com/CreatiVerseAr"><i class="fab fa-github"></i></a>
             </div>
-      
+            <select id="language-select" class="form-control">
+                <option value="" disabled selected>Elige el idioma</option>
+                <option value="es">Español</option>
+                <option value="en">English</option>
+            </select>
+            </div>     
             </div>
-      
-          </footer>
+        </div>    
+         </footer>
+         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+         <script src="js/lenguaje.js"></script>
+         
 </body>
-
 </html>
