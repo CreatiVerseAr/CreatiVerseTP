@@ -2,8 +2,7 @@
 Sitio web creado como trabajo final de equipo.
 
 # Falta:
-* Responsive
-* Animacion
-* Fexbox
+* Base
+* Carrito de compras
 
 
