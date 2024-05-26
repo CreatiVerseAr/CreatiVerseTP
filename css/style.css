@@ -11,21 +11,9 @@ p {
     font-size: 20px;
     text-align: justify;
     color: rgb(18, 18, 19);
-    /*background-color: rgb(255, 205, 234);
+    /*background-color: rgb(255, 205, 234);*/
 }
 
-.destacado {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    text-align: justify;
-    /*background-color:rgb(255, 205, 234);*/
-    color: rgb(61, 12, 114);
-}
-/*#fijo {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-}*/
 .pagina {
   background-image: url('../img/CODI.jpg');
   background-size: cover;
@@ -40,8 +28,8 @@ body.nosotros {
 }
 body.paginaCursos {
   background-image: url('../img/Hexagon-background.jpg'); 
-  background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
-  background-attachment: fixed; /* Fija la imagen de fondo */
+  background-size: cover; 
+  background-attachment: fixed; 
   
 }
 body.paginaRegistro {
@@ -51,11 +39,10 @@ body.paginaRegistro {
   color: black;
 }
 a {
+  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   color: rgb(51, 5, 100);
-  /*background-color: rgb(255, 209, 227);*/
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 a:hover {
@@ -71,12 +58,12 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 #subtitulo {
-  color: rgb(255, 255, 255);
+  color: rgb(248, 208, 130);
   font-size: 45px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-top: 400px;
   /*margin-left: 100px;*/
-  /*para mover a la derecha */
+  
 }
 
 #correo {
@@ -89,7 +76,7 @@ a:hover {
 
 /* contacto */
 .titulo {
-  color: rgb(93, 53, 135);
+  color:rgb(181, 27, 117);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 35 px;
   /*text-align: center;*/
@@ -102,7 +89,7 @@ label {
 }
 
 input {
-  color: rgb(6, 6, 59);
+  color: rgb(3, 174, 210);
   font-size: 20 px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -117,30 +104,34 @@ input {
   color: rgb(61, 12, 114);
 }
 
-.text-shadow-pop-tl {
-  -webkit-animation: text-shadow-pop-tl 0.9s both;
-  animation: text-shadow-pop-tl 0.9s both;
-}
-
-@keyframes text-shadow-pop-tl {
-  0% {
-      text-shadow: -2px -2px 0 rgba(255,255,255,0.2);
-  }
-  100% {
-      text-shadow: 2px 2px 0 rgba(255,255,255,0.2);
-  }
-}
-
-
 p.promocion {
-  animation-duration: 10s;
+  animation-duration: 15s;
   animation-name: slidein;
   animation-iteration-count: infinite;
   font: oblique bold 120% cursive;
   font-size: 25px;
-  color: rgba(207, 250, 207, 0.6);
+  color:rgb(195, 255, 147);
 }
 
+p.promocion2 {
+  animation-duration: 08s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  font: oblique bold 120% cursive;
+  color: rgb(243, 202, 82);
+  font-size: 24px; /* Tamaño del icono */
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+p.promocion3 {
+  animation-duration: 5s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  font: oblique bold 120% cursive;
+  font-size: 30px;
+  margin-left: 80%;
+  color: rgb(255, 0, 0);
+}
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -155,6 +146,7 @@ p.promocion {
 
 /* Pagina Nosotros */
 .section-title {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2rem;
   margin-bottom: 2rem;
   margin: 20px;
@@ -216,7 +208,7 @@ p.promocion {
 
 
 
-/* Pagina Cursos-Estructura con grid */
+/* Cursos-Estructura grid */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -324,9 +316,9 @@ form {
   border-radius: 10px; /* Bordes redondeados */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
   border: 2px solid rgb(104, 5, 79); /* Borde de color */
-  width: 500px; /* Ancho absoluto en píxeles */
+  width: 500px; /* Ancho en píxeles */
   max-width: 1000px; /* Máximo del formulario */
-  margin: 0 auto; /* Centra el formulario horizontalmente */  
+  margin: 0 auto; /* Centra el formulario  */  
 }
 input[title]:hover::after,
 select[title]:hover::after {
@@ -566,38 +558,52 @@ form button[type="submit"]:hover {
 
 }
 /*Idioma Ingles*/
-.dropdown {
-  position: relative;
-  display: inline-block;
+.footer-right .form-group {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #c0b3b3;
-  min-width: 80px;
-  box-shadow: 0px 6px 12px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+.footer-right .form-label {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.footer-right select {
+  font-family: Arial, Helvetica, sans-serif 14px;
+  padding: 6px;
+  border-radius: 4px;
+  border: none;
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 16px;
+  width: 200px;
+  height: 40px;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 10px 14px;
-  text-decoration: none;
-  display: block;
+.footer-right select:focus {
+  outline: none;
+  background-color: #444a4d;
 }
 
-.dropdown-content a:hover {
-  background-color: #5e1414;
+.footer-right select option {
+  background-color: #33383b;
+  color: #ffffff;
+  
 }
 
-.fadeIn {
-  animation: fadeIn 1s ease;
+/* Smooth transition for language selector */
+.footer-right select {
+  transition: background-color 0.3s ease, color 0.3s ease;
+ 
 }
+
+
 
 @keyframes fadeIn {
   from {
