@@ -15,11 +15,85 @@ p {
 }
 
 .pagina {
-  background-image: url('../img/CODI.jpg');
+  /*background-image: url('../img/CODI.jpg');*/
   background-size: cover;
+  color: black;
   background-attachment: fixed;
  
 }
+.navbar-custom {
+  background-color: #c9b9c5; /* Cambia color del fondo del menu */
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+ /* font: oblique bold 120% cursive;
+  font-size: 30px;*/
+  margin: 0;
+  padding: 0;
+  background-color: #232222;
+  
+}
+
+
+.hero {
+  background: url('../img/programming-background-collage.jpg') no-repeat center center/cover;
+  height: 80vh;
+  font: oblique bold 120% cursive;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #dcedba;
+  padding: 0 2rem;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 2s ease-in-out;
+  
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: slideInFromLeft 1s ease-out;
+  
+}
+
+.hero button {
+  background: #ff5722;
+  border:black;
+  padding: 1rem 2rem;
+  color: #d3e5e7;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 1rem;
+  animation: slideInFromRight 1s ease-out;
+  border-radius: 15px; /*redondea puntas*/
+}
+
+.hero button:hover {
+  background: #d003a0;
+}
+
+@keyframes slideInFromLeft {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slideInFromRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+
+
 body.nosotros {
   background-image: url('../img/Hexagon-background.jpg'); 
   background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
@@ -94,13 +168,13 @@ input {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.container2 {
+/*.container2 {
   text-align: center;
   margin-top: 50px;
   display: block;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
-  /*background-color:rgb(255, 205, 234);*/
+  /*background-color:rgb(255, 205, 234);
   color: rgb(61, 12, 114);
 }
 
@@ -119,8 +193,8 @@ p.promocion2 {
   animation-iteration-count: infinite;
   font: oblique bold 120% cursive;
   color: rgb(243, 202, 82);
-  font-size: 24px; /* Tamaño del icono */
-  margin-right: 10px; /* Espacio entre el icono y el texto */
+  font-size: 24px; /* Tamaño del icono 
+  margin-right: 10px; /* Espacio entre el icono y el texto 
 }
 p.promocion3 {
   animation-duration: 5s;
@@ -142,7 +216,7 @@ p.promocion3 {
     margin-left: 0%;
     width: 100%;
   }
-}
+}*/
 
 /* Pagina Nosotros */
 .section-title {
@@ -399,7 +473,7 @@ form button[type="submit"]:hover {
 }
 
 .footer-distributed{
-  background: #666;
+  background: #c9b9c5;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -422,7 +496,7 @@ form button[type="submit"]:hover {
 
 /* company logo */
 .footer-distributed h3{
-  color:  #ffffff;
+  color:  #e2dede;
   font: oblique bold cursive;
   margin: 0;
 }
@@ -434,7 +508,7 @@ form button[type="submit"]:hover {
 
 /* Footer links */
 .footer-distributed .footer-links{
-  color:  #ffffff;
+  color:  #191919;
   margin: 20px 0 12px;
   padding: 0;
 }
@@ -461,7 +535,7 @@ form button[type="submit"]:hover {
 
 .footer-distributed .footer-center i{
   background-color:  #33383b;
-  color: #ffffff;
+  color: #edeaea;
   font-size: 12px;
   width: 30px;
   height: 30px;
@@ -479,7 +553,7 @@ form button[type="submit"]:hover {
 
 .footer-distributed .footer-center p{
   display: inline-block;
-  color: #ffffff;
+  color: #191919;
   font-weight:400;
   vertical-align: middle;
   margin:0;
