@@ -11,7 +11,7 @@
     <link rel="icon" href="img/favicon.png" type="image">
 </head>
 <body class="pagina">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
         <div class="container">
             <a class="navbar-brand" href="index.html" style="color: rgb(64, 165, 120);" data-lang="inicio">Inicio</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,7 +26,7 @@
             </div>
         </div>
     </nav>
-<p class="promocion" data-lang="promocion">
+    <!--p class="promocion" data-lang="promocion">
     Desbloquea tu potencial y haz realidad tus sueños digitales!
     </p>
 <p class="promocion2" data-lang="promocion">
@@ -41,8 +41,19 @@
     </div>
        
     <h1 id="nombretitulo" class="text-center mt-4 animate__animated animate__zoomInDown animate__slow" data-lang="creativerse">CreatiVerse</h1>
-    <p class="text-center mt-4 animate__animated animate__tada animate__slower animate__repeat-2"><a id="correo" href="mailto:creativerse.ar@gmail.com" class="button" data-lang="envianos_correo">Envíanos un correo</a></p> 
-   
+    <p class="text-center mt-4 animate__animated animate__tada animate__slower animate__repeat-2"><a id="correo" href="mailto:creativerse.ar@gmail.com" class="button" data-lang="envianos_correo">Envíanos un correo</a></p--> 
+        <section id="inicio">
+            <div class="hero">
+                <h2>Desbloquea tu potencial y haz realidad tus sueños digitales</h2>
+                <button onclick="redirectToCourses()">Descubre Nuestros Cursos</button>
+            </div>
+        </section>
+        <script>
+            function redirectToCourses() {
+                window.location.href = './cursos.html';
+            }
+        </script>
+    
     <footer class="footer-distributed">
         <div class="footer-left">
             <h3>Creati<span>Verse</span></h3>
