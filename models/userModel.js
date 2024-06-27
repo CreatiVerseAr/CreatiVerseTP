@@ -9,7 +9,7 @@ const User = {
       callback
     );
   },
-  // Otros métodos como find, update, delete pueden ser agregados aquí
+  // Otros métodos como find, update, delete pueden ser agregados aca
 };
 
 module.exports = User;
