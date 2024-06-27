@@ -4,6 +4,6 @@ const authController = require('../controllers/authController');
 
 router.post('/register', authController.register);
 
-// Puedes agregar más rutas como login, etc.
+// Se pueden agregar más rutas como login, etc.
 
 module.exports = router;
