@@ -50,7 +50,9 @@ npm install express body-parser mysql2 bcrypt jsonwebtoken
 ├── index.js
 └── package.json
 
-
+# .gitignore
+* Ignora la carpeta node_modules
+node_modules
 
 
 
