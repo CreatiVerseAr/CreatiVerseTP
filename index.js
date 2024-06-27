@@ -7,10 +7,10 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Usar las rutas de autenticación
+// rutas de autenticación
 app.use('/api/auth', authRoutes);
 
-// Servir archivos estáticos desde la raíz de "public"
+// Archivos estáticos desde la raíz de "public"
 app.use(express.static(__dirname + '/public'));
 
 // Servir las vistas HTML desde la raíz del proyecto
