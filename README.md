@@ -5,8 +5,8 @@ Sitio web creado como trabajo final de equipo.
 * Carrito de compras
 
 # Instalamos:
-npm install express body-parser mysql2 bcrypt jsonwebtoken
-npm start
+* npm install express body-parser mysql2 bcrypt jsonwebtoken
+* npm start
 control + c Cierra
 
 
@@ -25,7 +25,7 @@ New/
 Save o Save as si ya habiamos usado.
 
 * POST a http://localhost:3000/api/auth/register
-{
+* {
   "nombre": "Juan",
   "apellido": "Pérez",
   "genero": "masculino",
@@ -33,7 +33,7 @@ Save o Save as si ya habiamos usado.
   "password": "123456",
   "nivel": "intermedio"
 }
-{
+* {
   "nombre": "Pablo",
   "apellido": "Lopez",
   "genero": "masculino",
@@ -41,7 +41,7 @@ Save o Save as si ya habiamos usado.
   "password": "78910",
   "nivel": "basico"
 }
-{
+* {
   "nombre": "Eric",
   "apellido": "Dondeestas",
   "genero": "masculino",
@@ -49,7 +49,7 @@ Save o Save as si ya habiamos usado.
   "password": "134679",
   "nivel": "basico"
 }
-{
+* {
   "nombre": "Juana",
   "apellido": "Garcia",
   "genero": "femenino",
@@ -57,7 +57,7 @@ Save o Save as si ya habiamos usado.
   "password": "179352",
   "nivel": "avanzado"
 }
-{
+* {
   "nombre": "john",
   "apellido": "Nose",
   "genero": "masculino",
@@ -122,7 +122,7 @@ node_modules
 },
 # xammp
 * Cambios en config.inc.php:
-$cfg['Servers'][$i]['password'] = 'Athos88';
-$cfg['Servers'][$i]['AllowNoPassword'] = false;
+* $cfg['Servers'][$i]['password'] = 'Athos88';
+* $cfg['Servers'][$i]['AllowNoPassword'] = false;
 
 
