@@ -1,6 +1,5 @@
 const { db } = require('../config/config');
 
-
 const User = {
   create: (newUser, callback) => {
     const query = 'INSERT INTO users (nombre, apellido, genero, email, password, nivel) VALUES (?, ?, ?, ?, ?, ?)';
@@ -14,8 +13,14 @@ const User = {
       if (results.length === 0) return callback(null, null);
       return callback(null, results[0]);
     });
+  },
+
+  update: (userId, updatedFields, callback) => {
+    // Construye la consulta para actualizar el usuario
+    const { nombre, apellido, genero, nivel } = updatedFields;
+    const query = 'UPDATE users SET nombre = ?, apellido = ?, genero = ?, nivel = ? WHERE id = ?';
+    db.query(query, [nombre, apellido, genero, nivel, userId], callback);
   }
 };
 
 module.exports = User;
-
