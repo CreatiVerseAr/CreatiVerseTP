@@ -23,7 +23,7 @@ const register = async (req, res) => {
         return res.status(500).send('Error al registrar el cliente');
       }
       console.log('User registered successfully:', email);
-      res.status(201).send('Cliente registrado');
+      res.status(201).send('Cliente registrado con exito!');
     });
   } catch (error) {
     console.error('Error al registrar el cliente:', error);
