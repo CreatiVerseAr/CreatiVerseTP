@@ -57,6 +57,14 @@ Save o Save as si ya habiamos usado.
   "password": "179352",
   "nivel": "avanzado"
 }
+{
+  "nombre": "john",
+  "apellido": "Nose",
+  "genero": "masculino",
+  "email": "john@gmail.com",
+  "password": "calle123",
+  "nivel": "basico"
+}
 * En el cuerpo de la solicitud, seleccionar "raw" y elige "JSON".
 
 * http://localhost:3000/api/auth/login
@@ -64,6 +72,16 @@ Save o Save as si ya habiamos usado.
   "email": "juan.perez@gmail.com",
   "password": "123456"
 }
+* http://localhost:3000/api/auth/profile.
+{
+    "nombre": "Nuevo Nombre",
+    "apellido": "Nuevo Apellido",
+    "genero": "Nuevo Género",
+    "nivel": "Nuevo Nivel"
+}
+Para metodo PUT
+
+# PUT/GET/DELETE PROBAR
 
 
 
