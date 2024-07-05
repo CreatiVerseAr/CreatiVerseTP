@@ -20,7 +20,21 @@ const User = {
     const { nombre, apellido, genero, nivel } = updatedFields;
     const query = 'UPDATE users SET nombre = ?, apellido = ?, genero = ?, nivel = ? WHERE id = ?';
     db.query(query, [nombre, apellido, genero, nivel, userId], callback);
-  }
+  },
+
+  // Metodo para ver los usuarios
+   getAll: (callback) => {
+    const query = 'SELECT * FROM users';
+    db.query(query, (err, results) => {
+      if (err) return callback(err, null);
+      return callback(null, results);
+    });
+  },
+
+delete: (id, callback) => {
+  const query = 'DELETE FROM users WHERE id = ?';
+  db.query(query, [id], callback);
+}
 };
 
 module.exports = User;
