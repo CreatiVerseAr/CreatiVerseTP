@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const mysql = require('mysql2');
 const authRoutes = require('./routes/authRoutes'); 
 const { db } = require ('./config/config');
 
@@ -13,7 +14,7 @@ app.use(express.json());
 // Routes
 app.use('/api/auth', authRoutes);
 
-// Start the server
+// Correr
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Server esta corriendo en el puerto 🚀 ${PORT}`);
 });
