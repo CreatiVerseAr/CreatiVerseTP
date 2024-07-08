@@ -109,6 +109,8 @@ Value: Bearer <TOKEN> (token recibido al iniciar sesión)
 
 # DELETE 
 * URL: http://localhost:3000/api/auth/user/{id}
+http://localhost:3000/api/auth/user/9 al final el numero del usuario a eliminar
+
 Method: DELETE
 Headers:
 Key: Authorization
