@@ -16,13 +16,13 @@ const User = {
   },
 
   update: (userId, updatedFields, callback) => {
-    // Construye la consulta para actualizar el usuario
+    // Hace la consulta para actualizar el usuario
     const { nombre, apellido, genero, nivel } = updatedFields;
     const query = 'UPDATE users SET nombre = ?, apellido = ?, genero = ?, nivel = ? WHERE id = ?';
     db.query(query, [nombre, apellido, genero, nivel, userId], callback);
   },
 
-  // Metodo para ver los usuarios
+  // Para ver los usuarios
    getAll: (callback) => {
     const query = 'SELECT * FROM users';
     db.query(query, (err, results) => {
