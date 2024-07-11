@@ -89,7 +89,7 @@ Value: Bearer <TOKEN> ( token recibido)
 Body (JSON):json
 
 {
- "id": 8, / Usar el ID del usuario
+ "id": 8, / * Usar el ID del usuario. Sino no realizara la modificacion.
   "nombre": "Alma",
   "apellido": "Lista",
   "genero": "femenino",
@@ -109,7 +109,8 @@ Value: Bearer <TOKEN> (token recibido al iniciar sesión)
 
 # DELETE 
 * URL: http://localhost:3000/api/auth/user/{id}
-http://localhost:3000/api/auth/user/9 al final el numero del usuario a eliminar
+http://localhost:3000/api/auth/user/9 
+* Al final el numero del usuario a eliminar 
 
 Method: DELETE
 Headers:
