@@ -7,7 +7,7 @@ const { db } = require ('./config/config');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware
+// Middleware para habilitar cors
 app.use(cors());
 app.use(express.json());
 
