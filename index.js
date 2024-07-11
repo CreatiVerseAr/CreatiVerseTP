@@ -1,8 +1,10 @@
 const express = require('express');
 const cors = require('cors');
 const mysql = require('mysql2');
-const authRoutes = require('./routes/authRoutes'); 
+//const authRoutes = require('./routes/authRoutes'); 
 const { db } = require ('./config/config');
+const bodyParser = require('body-parser');
+const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
