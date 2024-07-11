@@ -44,6 +44,7 @@ const updateProfile = async (req, res) => {
 
     User.update(id, updatedUser, (err, result) => {
       if (err) return res.status(500).send('Error al actualizar el cliente');
+      if (result.affectedRows === 0) return res.status(404).send('Cliente no encontrado');
       res.status(200).send('Cliente actualizado');
     });
   } catch (error) {
