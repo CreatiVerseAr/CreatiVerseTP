@@ -73,5 +73,38 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/validacion.js"></script>
+    <script>
+        document.getElementById('registroForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            
+            const nombre = document.getElementById('nombre').value;
+            const apellido = document.getElementById('apellido').value;
+            const genero = document.querySelector('input[name="genero"]:checked').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const nivel = document.getElementById('nivel').value;
+
+            try {
+                const response = await fetch('http://localhost:3000/api/auth/register', {  
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ nombre, apellido, genero, email, password, nivel })
+                });
+
+                if (response.ok) {
+                    alert('Usuario registrado con éxito');
+                    // Redireccionar al usuario a otra página 
+                    window.location.href = 'index.html';
+                } else {
+                    alert('Error al registrar usuario');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error al registrar usuario');
+            }
+        });
+    </script>
 </body>
 </html>
