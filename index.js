@@ -11,8 +11,21 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-// Routes
+// Middleware para parsear las solicitudes
+app.use(bodyParser.json());
+
+// Middleware para archivos estáticos
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Rutas de autenticación
+const authRoutes = require('./routes/authRoutes');
 app.use('/api/auth', authRoutes);
+
+// Ruta para el archivo HTML home
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 
 // Correr
 app.listen(PORT, () => {
